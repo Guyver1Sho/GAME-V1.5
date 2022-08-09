@@ -1,0 +1,40 @@
+.intro {
+    display: flex;
+    color: white;
+    height: 10vh;
+        top: 10vh;
+        z-index: 50;
+        position: fixed;
+}
+
+.typing {
+    position: fixed;
+    margin-left: 10px;
+    color:red;
+    left: 57vw;
+
+}
+
+#h1 {
+    color:red;
+
+}
+
+.typing::after {
+    content: "";
+    position: absolute;
+    /* right -2px; */
+    width: 1px;
+    height: 5%;
+    border-right: 2px solid white;
+    animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,148 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    pointer-events: auto;
+}
+
+.psi-links {
+    display: flex;
+    align-items: flex-end;
+
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+}
+
+#psipowerimage {
+    position: fixed;
+    height: 20vh;
+    width: 20vw;
+    top: 6vh;
+    left: 5vw;
+}
+
+#psipowertext {
+    font-size: small;
+    position: fixed;
+    color: rgb(70, 192, 121);
+    top: 34vh;
+    left: 4vw;
+}
+
+#back {
+    position: fixed;
+    color: rgb(47, 207, 159);
+    border-color: rgb(47, 207, 159);
+    background-color: rgb(24, 78, 48);
+    top: 54.4vh;
+    left: 2.5vw;
+    height: 4.5vh;
+    width: 7vw;
+    cursor: pointer;
+}
+
+#Next {
+    position: fixed;
+    color: rgb(47, 207, 159);
+    border-color: rgb(47, 207, 159);
+    background-color: rgb(24, 78, 48);
+    top: 54.4vh;
+    left: 18.3vw;
+    height: 4.5vh;
+    width: 7vw;
+    cursor: pointer;
+}
+
+.logo2 {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+    display: flex;
+    left: 5%;
+    width: 20vw;
+    z-index: 200;
+}
+
+.burger2 {
+    display: none;
+    cursor: pointer;
+    top: 1px;
+    display: block;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.burger2 div {
+    overflow: hidden;
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    margin: 7px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .psi-links {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
+.psi-links {
+    position: fixed;
+    left: 5vh;
+    height: 60vh;
+    top: 5vh;
+    background-image: url("PSI MENU FINAL.jpg");
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40vw;
+    transform: translateY(-101%);
+    transition: transform 0.5s ease-in;
+    z-index: 12;
+}
+
+.burger2 {
+    display: block;
+    cursor: pointer;
+}
+
+.psi-active {
+    transform: translate(0%);
+}
+
+@keyframes psiLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line4 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.toggle .line5 {
+    opacity: 0;
+}
+.toggle .line6 {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
